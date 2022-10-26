@@ -1,0 +1,406 @@
+/*  Start public Roles  */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black
+}
+
+:root {
+    --main-color: #ff7b00;
+    --second-color: #ff9f1c;
+    --third-color: #ffc107;
+    --link-color: rgba(255, 255, 255, 0.6);
+    --p-color: #575a7b;
+    --bg-color: #f2f3fa;
+    --footer-color: rgb(2 4 15);
+}
+
+.main-btn {
+    background-color: var(--main-color);
+    border-radius: 0;
+}
+
+.second-btn {
+    color: var(--main-color);
+}
+
+.third-btn {
+    background-color: white;
+    color: black !important;
+    border-radius: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.main-head {
+    color: var(--main-color);
+}
+
+.icon-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.custom-icon {
+    background-color: var(--main-color);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+
+@media only screen and (max-width: 990px) {
+    .width-md {
+        width: 100% !important;
+    }
+
+    .carousel-caption {
+        width: 100% !important;
+        position: absolute;
+        left: 0;
+    }
+}
+
+/* End Public Roles  */
+
+/* Start Contact */
+.contact {
+    background-color: black;
+    font-size: 14px;
+}
+
+.contact .social {
+    font-size: 16px;
+}
+
+.contact li a:hover {
+    color: white;
+}
+
+/* End Contact */
+
+/* start nav */
+nav .mainul li {
+    margin: 10px 17px;
+}
+
+nav .custom-drop {
+    border-top: 2px solid var(--main-color);
+    border-radius: 0;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+}
+
+.nav-item svg {
+    transition: 1s;
+}
+
+.nav-item:hover svg {
+    transform: rotate(180deg);
+
+}
+
+.nav-item:hover .custom-drop {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 16px !important;
+}
+
+/* End nav  */
+/* Start Slider  */
+.cust-slider {
+    height: calc(100vh - 90.64px);
+}
+
+.slider-layout {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.carousel .info {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.carousel h1 {
+    margin: auto;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* End slider  */
+
+/* start Wecolme section  */
+@media only screen and (max-width: 990px) {
+    .weclome h1 {
+        width: 100% !important;
+    }
+}
+
+.weclome li {
+    list-style-type: none;
+    line-height: 2.5rem;
+}
+
+.weclome li svg {
+    border-radius: 50%;
+    color: white;
+    background-color: var(--main-color);
+}
+
+/* start Wecolme section  */
+/* start feature  */
+.feature {
+    background-color: var(--bg-color);
+}
+
+/* end feature */
+
+/* Start our Work  */
+.project-title {
+    bottom: 20px;
+}
+
+.projects .project-title {
+    height: 120px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.projects .project-title:hover {
+    cursor: pointer;
+    height: 180px;
+}
+
+/* End our Work */
+
+/*Start team */
+.teams-link {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.685);
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.teams .card:hover .teams-link {
+    display: flex;
+}
+
+.teams-link svg {
+    background: rgb(228, 216, 216);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.teams-link svg:hover {
+    background-color: aquamarine;
+}
+
+
+/* End Team*/
+
+/* Start process  */
+.process {
+    background-color: var(--bg-color);
+}
+
+.process .card {
+    border-radius: 0;
+}
+
+.process svg {
+    color: white;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+}
+
+/* End process  */
+
+/* start Vedio Section  */
+.vedio-section {
+    height: 60vh;
+    background-image: url("../imgs/bg-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.vedio-section h1 {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.vedio-section svg {
+    font-size: 50px;
+}
+
+/* start Vedio Section  */
+
+/* Start Services */
+.services .card {
+    transition: 0.3s;
+}
+
+.services .card:hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+}
+
+/* Start Services */
+/* Start Enginner */
+.enginner {
+    background-color: var(--main-color);
+}
+
+@media only screen and (max-width: 990px) {
+    .enginner .first-side {
+        width: 100% !important;
+    }
+}
+
+.enginner .bg-enginner img {
+    width: 100%;
+    height: 100%;
+}
+
+.enginner ul li {
+    line-height: 2rem;
+}
+
+.enginner ul li svg {
+    background-color: white;
+    color: black;
+}
+
+.enginner .eng-btn {
+    border: 2px solid white;
+}
+
+/* End Enginner */
+
+
+/* Start Team */
+
+/* End team */
+
+
+/* start Blog */
+.blog {
+    background-color: var(--bg-color);
+    padding-bottom: 300px;
+}
+
+.blog-detial {
+    bottom: -180px;
+    transition: 0.3s;
+}
+
+.blog-detial:hover {
+    bottom: -160px;
+}
+
+.blog-detial1 {
+    bottom: -180px;
+    transition: 0.3s;
+}
+
+.blog-detial1:hover {
+    bottom: -160px;
+}
+
+@media only screen and (max-width: 990px) {
+    .blog-detial1 {
+        position: relative !important;
+        bottom: 50px;
+        transition: 0.3s;
+    }
+
+    .blog-detial1:hover {
+        bottom: 70px;
+    }
+}
+
+.blog-detial .third-btn {
+    color: var(--main-color) !important;
+}
+
+/* End Blog */
+
+/* Start contact  */
+.contact-form {
+    position: relative;
+    background-image: url("../imgs/services-6.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+}
+
+.contact-form .layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff7b00b6;
+}
+
+.contact-form input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.contact-form input[type="text"]:focus {
+    outline: none;
+}
+
+.contact-form ::placeholder {
+    color: white;
+}
+
+.contact-form .eng-btn {
+    border: 2px solid white;
+    color: white;
+    width: 180px;
+    height: 40px;
+}
+
+/* End Contact */
+
+/* Start footer */
+footer {
+    background-color: var(--footer-color)
+}
+
+footer .custom-icon {
+    margin-right: 20px;
+    font: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.copy-right {
+    color: #ff7b00;
+}
+
+/* End Footer  */
+.hh {
+    height: 200vh;
+}
